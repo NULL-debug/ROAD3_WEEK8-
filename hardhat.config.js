@@ -37,7 +37,7 @@ module.exports = {
   solidity: "0.8.4",
   networks: {
     
-    "optimism": {
+    "goerli": {
       url: process.env.URL,
       accounts: [ process.env.MNEMONIC ]
     }
