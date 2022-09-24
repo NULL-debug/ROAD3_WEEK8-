@@ -22,24 +22,23 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
  * 切记私钥不要上传到仓库 切记 切记
  */
 
-// module.exports = {
-//   solidity: "0.8.4",
-//   networks: {
-    
-//     "goerli": {
-//       url: "",
-//       accounts: [ "" ]
-//     }
-//   }
-// };
-
-module.exports = {
+ module.exports = {
   solidity: "0.8.4",
   networks: {
     
     "goerli": {
-      url: process.env.URL,
-      accounts: [ process.env.MNEMONIC ]
+      url: '',
+      accounts: [ '' ]
     }
   }
 };
+
+// module.exports = {
+//   solidity: "0.8.4",
+//   networks: {
+//     "goerli": {
+//       url: process.env.URL,
+//       accounts: [ process.env.MNEMONIC ]
+//     }
+//   }
+// };
