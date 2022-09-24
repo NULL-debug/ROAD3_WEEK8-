@@ -27,8 +27,8 @@ task("accounts", "Prints the list of accounts", async (taskArgs, hre) => {
   networks: {
     
     "goerli": {
-      url: '',
-      accounts: [ '' ]
+      url: '',    // goerli_https
+      accounts: [ '' ]   // private_key
     }
   }
 };
